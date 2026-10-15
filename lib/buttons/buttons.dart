@@ -9,8 +9,8 @@ class Buttons extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            ElevatedButton(onPressed: () {}, child: Text("I love you")),
-            OutlinedButton(onPressed: () {}, child: Text("I hate you")),
+            ElevatedButton(onPressed: () {}, child: Text("I am a cat")),
+            OutlinedButton(onPressed: () {}, child: Text("I am a dog")),
             TextButton(onPressed: () {}, child: Text("I am the super cian")),
             FloatingActionButton(
               onPressed: () {},

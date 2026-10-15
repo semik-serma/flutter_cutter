@@ -1,25 +1,39 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// class ViperInteraction extends StatelessWidget {
-//   const ViperInteraction({super.key});
-//   @override
-//   void greet([String name = "Jang Bahadur"]) {
-//     debugPrint("$name, Good Morning");
-//   }
-
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: Column(
-//           children: [
-//             OutlinedButton(
-//               onPressed: () => greet("yellow"),
-//               child: Text("Greet me"),
-//             ),
-//             Material(),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
+class ViperInteraction extends StatelessWidget {
+  const ViperInteraction({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                GestureDetector(
+                  child: Container(
+                    color: Colors.blue,
+                    padding: EdgeInsets.all(10),
+                    child: Text("tap me"),
+                  ),
+                  onTap: () {
+                    debugPrint("User tapped");
+                  },
+                  onDoubleTap: () {
+                    debugPrint("User double tapped");
+                  },
+                  onLongPress: () {
+                    debugPrint("long pressed");
+                  },
+                  onDoubleTapCancel: () {
+                    debugPrint("Double tap canceled");
+                  },
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
