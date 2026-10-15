@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/sliver_screen.dart';
 import 'package:new_flutter_project/stack.dart';
-import 'package:new_flutter_project/viper_interaction.dart';
+import 'package:new_flutter_project/test_home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        '/': (_) => ViperInteraction(),
+        '/': (_) => Testinjection(),
         '/mystack': (_) => Mystack(),
         '/sliverscreen': (_) => SliverScreen(),
       },
