@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/typography/typhography.dart';
+import 'package:new_flutter_project/trash/typography/typhography.dart';
 
 class AppTheme {
   // Light Theme Setup

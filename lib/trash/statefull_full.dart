@@ -41,7 +41,7 @@ class _StatefullpageState extends State<Statefullpage> {
         child: Column(
           children: [
             Text(
-              "${counter}",
+              "$counter",
               style: TextStyle(color: Colors.black38, fontSize: 28),
             ),
             ElevatedButton(

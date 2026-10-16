@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/responsive/constrained_widget.dart';
-import 'package:new_flutter_project/sliver_screen.dart';
-import 'package:new_flutter_project/stack.dart';
+import 'package:new_flutter_project/features/products/screens/product_list_screens.dart';
+import 'package:new_flutter_project/features/products/widget/product_card.dart';
+import 'package:new_flutter_project/trash/responsive/layoutpractice.dart';
+import 'package:new_flutter_project/trash/stack.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        '/': (_) => ContsTrainedBox(),
-        '/mystack': (_) => Mystack(),
-        '/sliverscreen': (_) => SliverScreen(),
+        '/': (_) => ProductListScreens(),
+        '/mylayout': (_) => Layoutpractice(),
+        '/sliverscreen': (_) => Mystack(),
       },
       title: 'My Flutter App',
       debugShowCheckedModeBanner: false,

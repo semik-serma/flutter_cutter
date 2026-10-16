@@ -4,7 +4,7 @@ class Detailscreen extends StatelessWidget {
   final String productName;
   final int productPrice;
   final String? deliveryAddress;
-  Detailscreen({
+  const Detailscreen({
     super.key,
     required this.productName,
     required this.productPrice,
