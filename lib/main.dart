@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/features/products/screens/product_list_screens.dart';
-import 'package:new_flutter_project/features/products/widget/product_card.dart';
+import 'package:new_flutter_project/buttons/segmented_button.dart';
 import 'package:new_flutter_project/trash/responsive/layoutpractice.dart';
 import 'package:new_flutter_project/trash/stack.dart';
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        '/': (_) => ProductListScreens(),
+        '/': (_) => SegmentedButtonDartFlutter(),
         '/mylayout': (_) => Layoutpractice(),
         '/sliverscreen': (_) => Mystack(),
       },
