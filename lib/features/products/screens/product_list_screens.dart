@@ -10,6 +10,14 @@ class ProductListScreens extends StatefulWidget {
 }
 
 class _ProductListScreensState extends State<ProductListScreens> {
+  final TextEditingController searchController = TextEditingController();
+  String query = '';
+  @override
+  void dispose() {
+    searchController.dispose();
+    super.dispose();
+  }
+
   final Set<int> favourites = {};
 
   final List<ProductModel> products = [
@@ -87,12 +95,41 @@ class _ProductListScreensState extends State<ProductListScreens> {
 
   @override
   Widget build(BuildContext context) {
+    final filteredProducts = products
+        .where(
+          (product) => product.name.toString().toLowerCase().contains(
+            query.toLowerCase(),
+          ),
+        )
+        .toList();
     return Scaffold(
-      appBar: AppBar(title: const Text("Product List Screen")),
+      appBar: AppBar(
+        // properties
+        title: SearchBar(
+          controller: searchController,
+          hintText: "Search Products",
+          onChanged: (value) {
+            setState(() {
+              query = value;
+            });
+          },
+          trailing: [
+            IconButton(
+              onPressed: () {
+                searchController.clear();
+                setState(() {
+                  query = "";
+                });
+              },
+              icon: Icon(Icons.search),
+            ),
+          ],
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(12),
         child: GridView.builder(
-          itemCount: products.length,
+          itemCount: filteredProducts.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 12,

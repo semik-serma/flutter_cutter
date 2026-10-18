@@ -37,20 +37,28 @@ class _StatefullpageState extends State<Statefullpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Counter $counter")),
-      body: Center(
-        child: Column(
-          children: [
-            Text(
-              "$counter",
-              style: TextStyle(color: Colors.black38, fontSize: 28),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  "$counter",
+                  style: TextStyle(color: Colors.black38, fontSize: 28),
+                ),
+                ElevatedButton(
+                  onPressed: () => (increment()),
+                  child: Text("Increment"),
+                ),
+                OutlinedButton(onPressed: dispose, child: Text("Dispose")),
+              ],
             ),
-            ElevatedButton(
-              onPressed: () => (increment()),
-              child: Text("Increment"),
-            ),
-            OutlinedButton(onPressed: dispose, child: Text("Dispose")),
-          ],
+          ),
         ),
+      ),
+      bottomSheet: SizedBox(
+        height: 12,
+        child: Text("Hello", style: TextStyle(color: Colors.red, fontSize: 18)),
       ),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/buttons/segmented_button.dart';
+import 'package:new_flutter_project/practice/fluter_widgets/bottom_sheet.dart';
+import 'package:new_flutter_project/practice/fluter_widgets/dialouges.dart';
+import 'package:new_flutter_project/trash/dialoues/simple_dialog_screen.dart';
 import 'package:new_flutter_project/trash/responsive/layoutpractice.dart';
 import 'package:new_flutter_project/trash/stack.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        '/': (_) => SegmentedButtonDartFlutter(),
+        '/': (_) => SimpleDialogScreenDart(),
         '/mylayout': (_) => Layoutpractice(),
         '/sliverscreen': (_) => Mystack(),
       },
