@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/trash/dialoues/full_screen_dialog.dart';
-import 'package:new_flutter_project/trash/responsive/layoutpractice.dart';
-import 'package:new_flutter_project/trash/stack.dart';
+import 'package:new_flutter_project/widgets/file_handeling/file_picker_screen.dart';
+import 'package:new_flutter_project/widgets/responsive/layoutpractice.dart';
+import 'package:new_flutter_project/widgets/stack.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        '/': (_) => FullScreenDialogDartFlutter(),
+        '/': (_) => FilePickerScreenDart(),
         '/mylayout': (_) => Layoutpractice(),
         '/sliverscreen': (_) => Mystack(),
       },

@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/features/products/model/product_model.dart';
-import 'package:new_flutter_project/trash/typography/typhography.dart';
+import 'package:new_flutter_project/widgets/typography/typhography.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
@@ -106,7 +106,9 @@ class ProductCard extends StatelessWidget {
                                 ? Icons.favorite_rounded
                                 : Icons.favorite_border_rounded,
                             key: ValueKey(isFavoutrite),
-                            color: isFavoutrite ? Colors.redAccent : Colors.white,
+                            color: isFavoutrite
+                                ? Colors.redAccent
+                                : Colors.white,
                           ),
                         ),
                       ),

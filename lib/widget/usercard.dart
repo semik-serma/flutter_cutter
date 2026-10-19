@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/features/user/model/user_model.dart';
-import 'package:new_flutter_project/trash/typography/typhography.dart';
+import 'package:new_flutter_project/widgets/typography/typhography.dart';
 
 class UserCard extends StatelessWidget {
   final UserModel user;

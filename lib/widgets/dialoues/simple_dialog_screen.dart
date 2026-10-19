@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/trash/typography/typhography.dart';
+import 'package:new_flutter_project/widgets/typography/typhography.dart';
 
 class SimpleDialogScreenDart extends StatelessWidget {
   const SimpleDialogScreenDart({super.key});

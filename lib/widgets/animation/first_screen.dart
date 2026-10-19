@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/trash/animation/second_screen.dart';
+import 'package:new_flutter_project/widgets/animation/second_screen.dart';
 
 class MyFirstPage extends StatefulWidget {
   const new({super.key});

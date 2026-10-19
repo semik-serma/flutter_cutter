@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/trash/animation/animated_icon.dart';
+import 'package:new_flutter_project/widgets/animation/animated_icon.dart';
 
 //animatedOpacity  ------> fade elements in or out
 //AnimatedAlign  -------->Animate aligment

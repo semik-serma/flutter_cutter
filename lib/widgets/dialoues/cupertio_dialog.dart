@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/trash/typography/typhography.dart';
+import 'package:new_flutter_project/widgets/typography/typhography.dart';
 
 class CupertinoDialogDart extends StatelessWidget {
   const CupertinoDialogDart({super.key});
